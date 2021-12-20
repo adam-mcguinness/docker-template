@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    web:
+        image: webdevops/php-nginx:8.0
+        ports:
+            - "8080:80"
+        volumes:
+            - ./code :/app
+#            - ./site.conf:/opt/docker/etc/nginx/global.conf
+
